@@ -1,0 +1,3 @@
+salary DOUBLE);<dependencies><!-- Spring JDBC --><dependency><groupId>org.springframework</groupId><artifactId>spring-jdbc</artifactId><version>6.1.10</version></dependency><!-- Spring Transaction --><dependency><groupId>org.springframework</groupId><artifactId>spring-tx</artifactId><version>6.1.10</version></dependency><!-- MySQL JDBC Driver --><dependency><groupId>com.mysql</groupId><artifactId>mysql-connector-j</artifactId><version>9.0.0</version></dependency></dependencies>@Configuration@EnableTransactionManagementpublic class AppConfig {@Beanpublic DataSource dataSource() {DriverManagerDataSource ds =new DriverManagerDataSource();ds.setDriverClassName("com.mysql.cj.jdbc.Driver");ds.setUrl("jdbc:mysql://localhost:3306/springdb");ds.setUsername("root");ds…
+
+
